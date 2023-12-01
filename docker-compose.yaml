@@ -53,6 +53,7 @@ services:
       - ./minio:/data
     networks:
       - api_minio
+    command: server --address ":9000" --console-address ":9001" /data
 
 
 
