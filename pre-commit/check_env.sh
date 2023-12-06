@@ -1,5 +1,10 @@
-if [[ ! -f .env  || ! -f .env.example ]]; then
-    echo "ERROR: .env or .env.example file not found"
+if [[ ! -f .env  ]]; then
+    echo "WARNING: .env file not found"
+    exit 0
+fi
+
+if [[ ! -f .env.example ]]; then
+    echo "ERROR: .env.example file not found"
     exit 1
 fi
 
