@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   frontend:
-    image: ghcr.io/cmi-dair/linguaweb-frontend:main
+    image: ghcr.io/childmindresearch/linguaweb-frontend:main
     ports:
       - 3000:3000
     environment:
@@ -11,7 +11,7 @@ services:
       - frontend_api
 
   api:
-    image: ghcr.io/cmi-dair/linguaweb-api:main
+    image: ghcr.io/childmindresearch/linguaweb-api:main
     ports:
       - 8000:8000
     environment:
